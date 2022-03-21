@@ -1,5 +1,5 @@
 Pizza-Best
-A website for a pizzeria shop, Pizza-Best. Live demo [ ]
+A landing page for a new pizza shop in Nairobi.
 
 Project Contributor
 Belinda Ntinyari
@@ -11,8 +11,9 @@ Known Bugs
 Setup/Requirements
 Contact
 License
+
 General Information
-This is web application for my pizza shop , Pizza Paradise. As a way of trying to widen my customer base, using this web application, customers can order different sizes of pizzas with one or more toppings. They can also get deliveries done to them.
+This is web application for Pizza-Best business. This webpage has been built with the aim of reaching a wider range of clients as well as make delivery of pizza easier through the home delivery.
 
 Technologies Used
 HTML
@@ -20,17 +21,15 @@ CSS
 JavaScript
 Bootstrap
 jQuery
-Browsers
+
 Known Bugs
-I have no any known bugs.
+No known bugs yet.
 
 Setup Requirements / Installation
-A laptop, tab or phone.
-click the link above (live demo) and open it with your preferred browser
-Try and order your preferred pizza.
-Receive feedback.
-Contact
-Created by [@maureen-muriithi] (moh2wanja@gmail.com) - feel free to contact me!
+You can access the webpage through your;laptop, tab, phone or any other electronic gadget.
+
+Contact for more info:
+Belinda Ntinyari - ntinyaribelinda@gmail.com
 
 License
-This project is open source and available under the [MIT License] (Copyright (c) 2022 Maureen Muriithi.
+This project is open source and available under the [MIT License] (Copyright (c) 2022 Belinda Ntinyari.
