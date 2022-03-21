@@ -1,4 +1,4 @@
-//  create object constructor for pizza orders
+//  object constructor for pizza orders
 class orderPizza {
     constructor(size, crust, toppings, numberOfPizza, delivery) {
         this.size = size;
@@ -8,7 +8,7 @@ class orderPizza {
         this.delivery = delivery;
     }
 };
-// create prototypes that calculates prices
+// prototypes that calculates prices
 orderPizza.prototype.getSizePrice = function () {
     if (this.size === "Large") {
         return 1300;
@@ -51,11 +51,11 @@ orderPizza.prototype.getToppingsPrice = function () {
 orderPizza.prototype.priceOfDelivery = function () {
     if (this.Delivery === "Inperson") {
         return 0;
-    } else if (this.Delivery === "Home") {
-        return Math.floor(Math.random()*200);
+    } else {
+        return 200;
     }
 };
-// get user values
+//  user values
 $(document).ready(function () {
     $(".pizzaorder").submit(function (event) {
         event.preventDefault();
@@ -71,22 +71,29 @@ $(document).ready(function () {
         window.alert("Hello! You have ordered "+numberOfPizza+ " " +size+ " pizzas, with a " + crust +" crust and "+toppings + " toppings!");
         window.alert("The total cost is  " + totalPrice + " /= " + " For Delivery services kindly fill the form below");
     
-        // Address
-    $("#submit").click(function (event) {
-        event.preventDefault();
-        var keyedName = $("#yourName").val();
-        var keyedAddress = $("#yourAddress").val();
-        console.log(keyedName)
-        window.alert("Hey" + " " + keyedName + " " + " Your order will be ready in 25 mins and will be delivered to" + " " + keyedAddress + " " + "in the next 45 mins.")
-        window.alert("Your total order will be " + (totalPrice + newOrderPizza.priceOfDelivery()));
-    });});
 
-    // $("#Delivery").change(function(){
-    //     if(delivery === "Inperson"){
-    //         $(".address").hide();
-    //         else{
-    //             $(".address").show();
-    //         };
-    //     };
-    // });
+        $("#order1").click(function (event) {
+            event.preventDefault();
+            var keyedName = $("#yourName").val();
+            var keyedAddress = $("#yourAddress1").val();
+            var inputAddress = $("#yourAddress2").val();
+            
+            
+            window.alert("Hey" + " " + keyedName + " " + " Your order will be ready in 20 mins and will be delivered to" + " " + keyedAddress + " " + " "+ inputAddress +" "+ "in the next 30 mins.")
+            window.alert("Your total order will be " + (totalPrice + newOrderPizza.priceOfDelivery()));
+        });
+});
+
+// Address
+
+//  object constructor for address
+class address {
+    constructor(name, phonenumber, address1, address2) {
+        this.name = name;
+        this.phonenumber = phonenumber;
+        this.address1 = address1;
+        this.address2 = address2;
+    }
+};
+
 });
