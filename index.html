@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap cdn -->
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- JQuery cdn -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <!-- local css file -->
+  <link rel="stylesheet" href="CSS/styles.css">
+  <title>Pizza B</title>
+
+  <style>
+    .background {
+    background-image: url(images/background.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    .background1 {
+    background-image: url(images/background1.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    .background2 {
+    background-image: url(images/background3.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+    <!-- <h1>Pizza-Best</h1>
+    <nav>
+      <ul>
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About Us</li></a>
+        <a href="#"><li>Our Menu</li></a>
+        <a href="#"><li>Order</li></a>
+      </ul>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong><em>Pizza-Best</em></strong>
+          <img src="images/logo.avif" alt="" width="100" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Our Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Order</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid background text-light p-5 text-center vh-100">
+      <img src="images/logo.avif" alt="...">
+      <div>
+        <h1>Welcome To Pizza-Best</h1>
+        <p>Where your Pizza cravings are sorted.</p>
+      </div>
+    </div>
+
+  <section>
+    <div class="container-fluid background1 text-light p-5 text-center vh-100">
+      <h2>About Us</h2>
+      <p>Here at Pizza-Best we ought to be about something beyond just an ordinary pizza. We ought to be a piece of our client's lives and the networks in which we serve.</p>
+      <p>At Pizza-Best, we are not simply baking pizza; we make individuals happy and satisfy their hunger. Pizza-Best is based on the conviction that pizza night ought to be exceptional, and we convey that conviction into all that we do.</p>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="bg-dark text-light p-5 text-center vh-100">
+      <h2>Our Menu</h2>
+      <div class="row text-center g-4">
+        <div class="col-md">
+          <div class="card" style="max-width: 18rem;">
+            <img src="images/cheese.avif" alt="...">
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card" style="max-width: 18rem;">
+            <img src="images/chiken macon bbq.avif" alt="...">
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card"  style="max-width: 18rem;">
+            <img src="images/peperoni.avif" alt="...">
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card"  style="max-width: 18rem;">
+            <img src="images/vegies.avif" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="background2 text-light p-5 text-center vh-100">
+    <h2>Order</h2>
+    <form class="pizzaorder">
+    <div>
+      <!-- Pizza size -->
+      <label for="Size">Pizza Size</label>
+      <select name="pizza" id="Size" required>
+        <option selected>Choose pizza size</option>
+        <option value="Large">Large@ksh.1300</option>
+        <option value="Medium">Medium@ksh.1000</option>
+        <option value="Small">Small@ksh.500</option>
+      </select>
+
+      <!-- Toppings -->
+      <label for="Topp">Toppings</label>
+      <select name="toppings" id="Topp" required>
+        <option selected>Choose toppings</option>
+        <option value="Mushroom">Mushroom@ksh.100</option>
+        <option value="Onions">Onions@ksh.50</option>
+        <option value="Bacon">Bacon@ksh.120</option>
+        <option value="Pepperoni">Pepperoni@ksh.200</option>
+        <option value="Sausage">Sausage@ksh.150</option>
+        <option value="Green peppers">Green peppers@ksh.70</option>
+        <option value="Extra cheese">Extra cheese@ksh.180</option>
+        <option value="Pineapple">Pineapple@ksh.90</option>
+      </select>
+
+      <!-- Crust -->
+      <label for="Crust">Crust</label>
+      <select name="pizzacrust" id="Crust" required>
+        <option selected>Choose crust</option>
+        <option value="Thick">Thick crust Pizza@ksh.150</option>
+        <option value="Thin">Thin crust@ksh.200</option>
+        <option value="Cheese">Cheese crust Pizza@ksh.170</option>
+        <option value="Flat">Flat bread crust@ksh.100</option>
+      </select>
+
+      <!-- Number of pizza -->
+      <input type="number" id="number" class="form-control" placeholder="Number of pizzas..." aria-label="number" required>
+
+      <!-- Input for delivery option -->
+      <label for="Delivery"></label>
+      <select name="deliverymode" id="Delivery">
+        <option valeu="Inperson">Inperson-picking</option>
+        <option value="Home">Home delivery</option>
+      </select>
+      <button id="order" type="submit" class="btn btn-primary">Place your Order</button>
+    </div>
+
+      <!-- Address -->
+    <div class="address">
+      <div>
+        <label for="yourName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="yourName" placeholder="Name">
+      </div>
+      <div>
+        <label for="yourNumber" class="form-label">Number</label>
+        <input type="number" class="form-control" id="yourNumber" placeholder="Phone number">
+      </div>
+      <div>
+        <label for="yourAddress" class="form-label">Address 1</label>
+        <input type="text" class="form-control" id="yourAddress" placeholder="Area">
+      </div>
+      <div>
+        <label for="yourAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="yourAddress2" placeholder="Resident Apartment">
+      </div>
+      <div>
+        <button id="order" type="submit" class="btn btn-primary">Place your Order</button>
+      </div>
+    </div>
+    </form>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+    <!-- js cdn -->
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  <script src="JS/scripts.js"></script>
+</body>
+</html>
